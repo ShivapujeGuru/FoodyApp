@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FoodyApp</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="icon" href="images/foodappLogo.png" type="image/png" sizes="16x16">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> -->
+
+    <!-- CDN links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+
+<body>
+    <header class="headerSec">
+        <div class="fortyLogo">
+            <div class="ui middle aligned list">
+                <div class="item">
+                    <img class="ui avatar image" src="images/foodappLogo.png">
+                    <div class="content">
+                        <h3 class="header">foodyApp</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fortySearchBar">
+            <form class="ui fluid icon input search searchQuery">
+                <input id="searchField" class="prompt" type="text"
+                    placeholder="Search over 1,00,000 Recipes . . .  eg : pizza ">
+                <i class="search icon"></i>
+            </form>
+            <!-- <p id="emptyElement"></p> -->
+        </div>
+    </header>
+    <section class="bannerSec">
+        <div class="bannerHolder">
+            <img src="images/foodAppBanner.jpg" alt="foodyApp">
+            <div class="contentHolder">
+                <h2 class="for">Recipes for Happiness. . .</h2>
+                <blockquote>
+                    <p>Recipes tells you nothing. Learning techniques is the key.</p>
+                    <footer>— Matt Linderman</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <section class="SecOne">
+        <div class="ui stackable grid">
+            <div class="three wide column">
+                <h2 class="recipeTitle">All Recipes</h2>
+                <div class="recipesList">
+                    <h3>Filter Recipes</h3>
+                    <div class="ui list filterList">
+                        <div class="item listHolder">
+                            <div class="ui master checkbox masterCheck">
+                                <input type="checkbox" name="fruits">
+                                <label>All</label>
+                            </div>
+                            <div class="list childList" id="filterList">
+                                <!-- http://forkify-api.herokuapp.com/phrases.html -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ten wide column">
+                <div class="recipeProfile" id="recipeProfileRender">
+                    <!-- <div class="profileTitle">
+                        <h2>Prosciutto-Wrapped Macaroni and Cheese Cups Recipe</h2>
+                    </div>
+                    <div class="profileImage">
+                        <img src="images/recipe_profile.jpg" alt="recipe_profile">
+                    </div>
+                    <div class="meta">
+                        <p>by Recipe Master</p>
+                    </div>
+                    <div class="profileContent">
+                        <div class="TimeAndServe">
+                            <div class="timeToPrepare">
+                                <i class="ui time outline icon"></i>
+                                <span>45 Minutes</span>
+                            </div>
+                            <div class="numOfServings">
+                                <i class="ui female icon"></i>
+                                <span>4 Servings</span>
+                            </div>
+                            <div class="addToFavorite">
+                                <button class="ui circular icon button" id="favorite">
+                                    <i class="ui star outline icon"></i>
+                                </button>
+                            </div>
+                        </div>      
+                        <div class="profileIngredients ui raised yellow segment">
+                            <div class="ingredientsTitle">
+                                <img src="images/ingredients.png" alt="Ingredients">
+                                <h3>Ingredients</h3>
+                            </div>
+                            <div class="ingredientsContent">
+                                <ul>
+                                    <li>Pineapple Mango Salsa</li>
+                                    <li>Macaroni and Cheese Cups Recipe</li>
+                                </ul>
+                                <button class="ui basic yellow button addCartBtn">
+                                    <i class="ui cart plus icon"></i>
+                                    <span>Add to Shopping List</span>
+                                </button>
+                            </div>
+                            <div class="howToCook">
+                                <div class="howToCookTitle">
+                                    <img src="images/kitchen.png" alt="How_to_Cook">
+                                    <h3>How to Cook it ?</h3>
+                                </div>
+                                <div class="howToCookBody">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, placeat perferendis. Voluptatibus adipisci numquam ex nesciunt tempora laudantium, autem maiores error, deserunt aut voluptatum? Placeat necessitatibus sunt ipsam quod? Harum!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="recipeProducts" id="loderSvg">
+                    <div class="ui stackable grid" id="recipesResultList">
+                        <!-- <div class="four wide column">
+                            <div class="ui card recipeCard" onclick="window.location='www.google.com'">
+                                <div class="image">
+                                    <img src="/images/foodAppBanner.jpg" alt="food App Banner">
+                                </div>
+                                <a href="www.google.com">
+                                    <div class="content">
+                                        <div class="title">
+                                            <h4>Lorem ipsum dolor sit.</h4>
+                                        </div>
+                                        <div class="meta">
+                                            <span>
+                                                <i class="small star icon"></i>
+                                                4.5
+                                              </span>
+                                            <span class="right floated">
+                                                <i class="small user icon"></i>
+                                                John Doe
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> -->
+                        <!-- <div class="notFound">
+                            <img src="images/empty.svg" alt="">
+                        </div> -->
+                    </div>
+                    <div class="paginationBtn" id="resPagination">
+                        <!-- <button class="ui small basic button Btnprev btnComn">
+                            <i class="ui angle left icon"></i>
+                            <span>page 1</span>
+                        </button>
+                        <button class="ui small basic button Btnnext btnComn">
+                            <span>page 2</span>
+                            <i class="ui angle right icon"></i>
+                        </button> -->
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h2 class="favoriteTitle">Favorite Recipes</h2>
+                <div class="favoriteList">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footerSec">
+        <div class="footerContent">
+            <p>by Guru Shivapuje</p>
+            <p>Made with Passion</p>
+        </div>
+    </footer>
+
+    <!-- CDN scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
+
+</html>

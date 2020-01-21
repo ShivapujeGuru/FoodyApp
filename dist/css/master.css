@@ -1,0 +1,367 @@
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body p,
+body li,
+body ul,
+body ::placeholder,
+body select,
+body option,
+body blockquote,
+body q,
+body b,
+body a,
+body ol,
+body label,
+body input,
+body span,
+body button {
+  font-family: "Montserrat", sans-serif !important; }
+
+.headerSec {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+  padding: 15px 5px; }
+  @media (max-width: 585px) {
+    .headerSec {
+      display: block !important; } }
+  .headerSec .fortyLogo .list .item img {
+    height: 32px;
+    width: 32px; }
+  .headerSec .fortyLogo .list .item .content h3 {
+    color: #218f76 !important;
+    font-size: 19px; }
+  .headerSec .fortySearchBar {
+    width: 45%;
+    /* #emptyElement {
+      padding-left: 20px;
+      color: rgb(207, 29, 29);
+    } */ }
+    @media (max-width: 585px) {
+      .headerSec .fortySearchBar {
+        width: 100%;
+        margin-top: 20px; } }
+    .headerSec .fortySearchBar input {
+      padding-left: 20px !important;
+      border: none !important;
+      border-radius: 6px !important;
+      border-bottom: 1px solid rgba(167, 141, 137, 0.7) !important; }
+      .headerSec .fortySearchBar input::placeholder {
+        color: rgba(167, 141, 137, 0.47) !important; }
+      .headerSec .fortySearchBar input:focus::placeholder {
+        color: rgba(167, 141, 137, 0.1) !important; }
+
+.bannerSec {
+  padding: 10px 0; }
+  .bannerSec .bannerHolder {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    border-radius: 20px;
+    height: 540px;
+    overflow: hidden; }
+    @media (max-width: 585px) {
+      .bannerSec .bannerHolder {
+        height: 230px; } }
+    .bannerSec .bannerHolder img {
+      width: 100%;
+      opacity: 0.85; }
+      @media (max-width: 585px) {
+        .bannerSec .bannerHolder img {
+          opacity: 0.65;
+          filter: brightness(0.8); } }
+    .bannerSec .bannerHolder .contentHolder {
+      position: absolute;
+      top: 10%;
+      right: 5%; }
+      .bannerSec .bannerHolder .contentHolder * {
+        color: #452403; }
+      @media (max-width: 585px) {
+        .bannerSec .bannerHolder .contentHolder {
+          top: 20%;
+          left: 5%; } }
+      .bannerSec .bannerHolder .contentHolder .for {
+        font: normal normal 32px/1 "Fira Sans", serif; }
+        @media (max-width: 585px) {
+          .bannerSec .bannerHolder .contentHolder .for {
+            font: normal normal 21px/1.1 "Fira Sans", serif; } }
+      .bannerSec .bannerHolder .contentHolder blockquote {
+        font-style: italic; }
+        @media (max-width: 585px) {
+          .bannerSec .bannerHolder .contentHolder blockquote {
+            margin: 20px; } }
+        .bannerSec .bannerHolder .contentHolder blockquote p {
+          font: italic 19px/1 "Fira Sans", serif;
+          padding: 0;
+          margin-bottom: 10px; }
+          @media (max-width: 585px) {
+            .bannerSec .bannerHolder .contentHolder blockquote p {
+              font: normal normal 15px/1.1 "Fira Sans", serif; } }
+
+.SecOne {
+  width: 95%;
+  min-height: 100vh;
+  margin: 0 auto 30px; }
+  .SecOne .recipeTitle {
+    font: normal 500 21px/1.1 "Fira Sans", serif;
+    padding: 30px 30px 15px; }
+  .SecOne .recipesList {
+    background-color: rgba(167, 141, 137, 0.08);
+    border-radius: 20px;
+    padding: 30px; }
+    .SecOne .recipesList h3 {
+      font: normal 500 17px/1.1 "Fira Sans", serif;
+      margin-bottom: 25px; }
+    .SecOne .recipesList .filterList {
+      min-height: 200px; }
+      .SecOne .recipesList .filterList .listHolder .masterCheck {
+        min-height: 30px; }
+        .SecOne .recipesList .filterList .listHolder .masterCheck * {
+          font: normal 600 15px/1.3 "Fira Sans", serif; }
+        .SecOne .recipesList .filterList .listHolder .masterCheck input {
+          left: auto;
+          right: 0; }
+        .SecOne .recipesList .filterList .listHolder .masterCheck label {
+          padding: 0 30px 0 0;
+          min-width: 165px; }
+          @media (max-width: 585px) {
+            .SecOne .recipesList .filterList .listHolder .masterCheck label {
+              min-width: 220px; } }
+          .SecOne .recipesList .filterList .listHolder .masterCheck label:before {
+            left: auto;
+            right: 0; }
+          .SecOne .recipesList .filterList .listHolder .masterCheck label:after {
+            left: auto;
+            right: 0; }
+      .SecOne .recipesList .filterList .listHolder .childList {
+        padding: 0; }
+        .SecOne .recipesList .filterList .listHolder .childList .childItem .childCheck {
+          min-height: 25px; }
+          .SecOne .recipesList .filterList .listHolder .childList .childItem .childCheck * {
+            font: normal 500 15px/1.3 "Fira Sans", serif; }
+          .SecOne .recipesList .filterList .listHolder .childList .childItem .childCheck input {
+            left: auto;
+            right: 0; }
+          .SecOne .recipesList .filterList .listHolder .childList .childItem .childCheck label {
+            text-transform: capitalize;
+            letter-spacing: 0.6px;
+            padding: 0 30px 0 0;
+            min-width: 165px; }
+            @media (max-width: 585px) {
+              .SecOne .recipesList .filterList .listHolder .childList .childItem .childCheck label {
+                min-width: 220px; } }
+            .SecOne .recipesList .filterList .listHolder .childList .childItem .childCheck label:before {
+              left: auto;
+              right: 0; }
+            .SecOne .recipesList .filterList .listHolder .childList .childItem .childCheck label:after {
+              left: auto;
+              right: 0; }
+  .SecOne .recipeProfile {
+    width: 100%;
+    overflow: hidden; }
+    .SecOne .recipeProfile .profileTitle {
+      text-align: center;
+      padding: 30px 0 15px; }
+      .SecOne .recipeProfile .profileTitle h2 {
+        font: normal 500 26px/1.2 "Fira Sans", serif;
+        color: #452403; }
+    .SecOne .recipeProfile .profileImage {
+      margin-top: 10px;
+      width: 100%;
+      max-height: 380px;
+      overflow: hidden;
+      border-radius: 20px; }
+      @media (max-width: 585px) {
+        .SecOne .recipeProfile .profileImage {
+          max-height: 240px; } }
+      .SecOne .recipeProfile .profileImage img {
+        width: 100%;
+        transform: translateY(-18%);
+        border-radius: 20px; }
+    .SecOne .recipeProfile .meta {
+      padding: 5px 0;
+      float: right;
+      font-style: italic; }
+    .SecOne .recipeProfile .profileContent {
+      margin: 30px 10px; }
+      .SecOne .recipeProfile .profileContent .TimeAndServe {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        @media (max-width: 585px) {
+          .SecOne .recipeProfile .profileContent .TimeAndServe {
+            padding-top: 20px;
+            display: block; } }
+        .SecOne .recipeProfile .profileContent .TimeAndServe .timeToPrepare,
+        .SecOne .recipeProfile .profileContent .TimeAndServe .numOfServings {
+          background-color: #fbbd07d1;
+          border: 1px solid #fbbd07d1;
+          padding: 8px 16px;
+          border-radius: 8px;
+          margin: 0 20px; }
+          .SecOne .recipeProfile .profileContent .TimeAndServe .timeToPrepare *,
+          .SecOne .recipeProfile .profileContent .TimeAndServe .numOfServings * {
+            color: #452403; }
+          @media (max-width: 585px) {
+            .SecOne .recipeProfile .profileContent .TimeAndServe .timeToPrepare,
+            .SecOne .recipeProfile .profileContent .TimeAndServe .numOfServings {
+              margin: 10px 20px; } }
+          .SecOne .recipeProfile .profileContent .TimeAndServe .timeToPrepare span,
+          .SecOne .recipeProfile .profileContent .TimeAndServe .numOfServings span {
+            font: normal 400 15px/1.2 "Fira Sans", serif; }
+        .SecOne .recipeProfile .profileContent .TimeAndServe .addToFavorite {
+          padding: 10px 20px;
+          border-radius: 14px; }
+          .SecOne .recipeProfile .profileContent .TimeAndServe .addToFavorite button {
+            background-color: #fbbd07d1; }
+            .SecOne .recipeProfile .profileContent .TimeAndServe .addToFavorite button * {
+              color: #452403; }
+      .SecOne .recipeProfile .profileContent .profileIngredients {
+        padding: 20px 30px 40px;
+        border-radius: 20px; }
+        .SecOne .recipeProfile .profileContent .profileIngredients .ingredientsTitle {
+          padding-bottom: 10px;
+          display: flex; }
+          .SecOne .recipeProfile .profileContent .profileIngredients .ingredientsTitle img {
+            width: auto !important;
+            height: 22px !important;
+            align-self: center;
+            margin-right: 10px; }
+          .SecOne .recipeProfile .profileContent .profileIngredients .ingredientsTitle h3 {
+            font: normal 500 24px/1.4 "Fira Sans", serif;
+            color: #452403;
+            align-self: center;
+            margin: 0; }
+        .SecOne .recipeProfile .profileContent .profileIngredients .ingredientsContent {
+          text-align: center; }
+          .SecOne .recipeProfile .profileContent .profileIngredients .ingredientsContent ul {
+            text-align: left;
+            padding-left: 0; }
+            .SecOne .recipeProfile .profileContent .profileIngredients .ingredientsContent ul li {
+              font: normal 400 15px/1.4 "Fira Sans", serif;
+              position: relative;
+              display: inline-block;
+              vertical-align: top;
+              width: 48%;
+              padding: 5px 10px 5px 34px; }
+              @media (max-width: 585px) {
+                .SecOne .recipeProfile .profileContent .profileIngredients .ingredientsContent ul li {
+                  width: auto; } }
+              .SecOne .recipeProfile .profileContent .profileIngredients .ingredientsContent ul li:before {
+                content: "";
+                background: url("../images/correct.png") center no-repeat;
+                background-size: 20px;
+                position: absolute;
+                top: 3px;
+                left: 0;
+                display: block;
+                width: 25px;
+                height: 25px; }
+          .SecOne .recipeProfile .profileContent .profileIngredients .ingredientsContent .addCartBtn {
+            font-size: smaller;
+            margin: 15px auto;
+            font-weight: 500; }
+            .SecOne .recipeProfile .profileContent .profileIngredients .ingredientsContent .addCartBtn:hover {
+              background-color: #eaae00 !important;
+              color: #fff !important; }
+        .SecOne .recipeProfile .profileContent .profileIngredients .howToCook .howToCookTitle {
+          padding: 15px 0 25px;
+          display: flex; }
+          .SecOne .recipeProfile .profileContent .profileIngredients .howToCook .howToCookTitle img {
+            width: 32px !important;
+            height: auto !important;
+            margin-right: 10px;
+            align-self: center; }
+          .SecOne .recipeProfile .profileContent .profileIngredients .howToCook .howToCookTitle h3 {
+            font: normal 500 24px/1.4 "Fira Sans", serif;
+            color: #452403;
+            align-self: center;
+            margin: 0; }
+        .SecOne .recipeProfile .profileContent .profileIngredients .howToCook .howToCookBody p {
+          font: normal 400 15px/1.4 "Fira Sans", serif; }
+  .SecOne .favoriteTitle {
+    padding: 30px 20px 15px;
+    font: normal 500 21px/1.1 "Fira Sans", serif; }
+  .SecOne .favoriteList {
+    background-color: rgba(167, 141, 137, 0.08);
+    border-radius: 20px;
+    padding: 30px;
+    min-height: 487vh; }
+    @media (max-width: 585px) {
+      .SecOne .favoriteList {
+        min-height: 50vh; } }
+  .SecOne .recipeProducts #recipesResultList {
+    justify-content: center; }
+  .SecOne .recipeProducts .loaderImage {
+    text-align: center;
+    margin-top: 15%; }
+  .SecOne .recipeProducts .notFound {
+    text-align: center;
+    margin: 9% auto; }
+    .SecOne .recipeProducts .notFound img {
+      max-height: 265px; }
+    .SecOne .recipeProducts .notFound .notFoundText {
+      margin-top: 30px; }
+      .SecOne .recipeProducts .notFound .notFoundText p {
+        font: normal 400 21px/1.4 "Fira Sans", serif; }
+  .SecOne .recipeProducts .paginationBtn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between; }
+    .SecOne .recipeProducts .paginationBtn .Btnprev,
+    .SecOne .recipeProducts .paginationBtn .Btnnext {
+      display: flex;
+      align-items: center;
+      height: fit-content;
+      padding: 6px 10px;
+      border-radius: 15px; }
+    .SecOne .recipeProducts .paginationBtn .Btnnext p {
+      order: -1; }
+  .SecOne .recipeProducts .card {
+    box-shadow: none; }
+  .SecOne .recipeProducts .recipeCard {
+    padding: 10px 5px; }
+    @media (max-width: 585px) {
+      .SecOne .recipeProducts .recipeCard {
+        margin: auto; } }
+    .SecOne .recipeProducts .recipeCard .image {
+      cursor: pointer;
+      background: none;
+      border-radius: 12px !important;
+      width: 100%;
+      overflow: hidden; }
+      .SecOne .recipeProducts .recipeCard .image img {
+        width: 100%;
+        height: 156px;
+        border-radius: 12px; }
+        .SecOne .recipeProducts .recipeCard .image img:hover {
+          transform: scale(1.04);
+          transition: ease all 0.4s; }
+    .SecOne .recipeProducts .recipeCard .content {
+      padding: 10px 5px;
+      border: none; }
+      .SecOne .recipeProducts .recipeCard .content .title {
+        padding-bottom: 5px; }
+        .SecOne .recipeProducts .recipeCard .content .title h4 {
+          font: normal 500 17px/1.3 "Fira Sans", serif;
+          color: #452403; }
+      .SecOne .recipeProducts .recipeCard .content .meta {
+        margin: 0;
+        font: normal 500 11px/1.4 "Fira Sans", serif; }
+
+.footerSec {
+  width: 100%;
+  background-color: #381d02;
+  padding: 20px 40px 5px; }
+  .footerSec * {
+    color: #fff; }
+  .footerSec .footerContent {
+    display: flex;
+    justify-content: space-between; }
+
+/*# sourceMappingURL=master.css.map */
